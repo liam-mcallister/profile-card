@@ -1,0 +1,122 @@
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Universal
+2. Body
+3. Text
+4. Card
+
+
+*/
+
+/*----------------------------------1. Universal----*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*---------------------------------------2. Body----*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background: #19a2ae;
+    color: #2d3248;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: -60vh;
+    right: 52vw;
+    width: 900px;
+    height: 900px;
+    z-index: -1;
+    background-image: url('/images/bg-pattern-top.svg');
+    background-size: 900px 900px;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    bottom: -82vh;
+    left: 48vw;
+    width: 1000px;
+    height: 1000px;
+    z-index: -1;
+    background-image: url('/images/bg-pattern-bottom.svg');
+    background-size: 1000px 1000px;
+}
+
+/*---------------------------------------3. Text----*/
+h2 {
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.card__bottom h2 {
+    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #6a6f81;
+}
+
+.card__bottom p {
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+}
+
+/*---------------------------------------4. Card----*/
+.card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0px 0px 40px 0px rgba(106, 111, 129, 0.5);
+    background: #fff;
+}
+
+.card__top {
+    position: relative;
+    height: 9rem;
+    border-radius: 1rem 1rem 0 0;
+    background: url('/images/bg-pattern-card.svg')
+}
+
+.card-img {
+    position: absolute;
+    top: 5.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.card__middle {
+    padding: 4.7rem 0 1.6rem 0;
+}
+
+span {
+    margin-left: 10px;
+    font-weight: 400;
+    color: #6a6f81;
+}
+
+.card__bottom {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.6rem 2rem;
+    border-top: 1px solid rgba(150, 150, 150, 0.22);
+}
