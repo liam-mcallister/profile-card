@@ -40,7 +40,7 @@ body::before {
     width: 900px;
     height: 900px;
     z-index: -1;
-    background-image: url('/images/bg-pattern-top.svg');
+    background-image: url('images/bg-pattern-top.svg');
     background-size: 900px 900px;
 }
 
@@ -52,7 +52,7 @@ body::after {
     width: 1000px;
     height: 1000px;
     z-index: -1;
-    background-image: url('/images/bg-pattern-bottom.svg');
+    background-image: url('images/bg-pattern-bottom.svg');
     background-size: 1000px 1000px;
 }
 
@@ -92,7 +92,7 @@ p {
     position: relative;
     height: 9rem;
     border-radius: 1rem 1rem 0 0;
-    background: url('/images/bg-pattern-card.svg')
+    background: url('images/bg-pattern-card.svg')
 }
 
 .card-img {
